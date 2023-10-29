@@ -1,0 +1,7 @@
+table_name,field_name,data_type
+accounts,acc_number,int
+accounts,transcation,int
+accounts,amount,int
+accounts,account_type,string
+transactions,trans_type,string
+transactions,trans_amount,int

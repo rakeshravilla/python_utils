@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "transactions",
+    "fields": [
+        {
+            "name": "trans_type",
+            "type": "string"
+        },
+        {
+            "name": "trans_amount",
+            "type": "int"
+        }
+    ]
+}

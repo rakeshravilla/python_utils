@@ -1,0 +1,22 @@
+{
+    "type": "record",
+    "name": "accounts",
+    "fields": [
+        {
+            "name": "acc_number",
+            "type": "int"
+        },
+        {
+            "name": "transcation",
+            "type": "int"
+        },
+        {
+            "name": "amount",
+            "type": "int"
+        },
+        {
+            "name": "account_type",
+            "type": "string"
+        }
+    ]
+}
