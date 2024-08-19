@@ -1,0 +1,7 @@
+{
+  "function_name": "your-lambda-function-name",
+  "payload": {
+      "key1": "value1",
+      "key2": "value2"
+  }
+}
