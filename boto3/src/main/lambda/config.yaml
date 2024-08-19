@@ -1,0 +1,15 @@
+niven:
+  region: "ap-southeast-2"
+  pipelines: 
+    - { 
+      1:['dl_client','dl_customer','dl_transaction'],
+      2:['dm_client','dm_customer','dm_transaction']
+    }
+
+nab:
+  region: "us-east-1"
+  pipelines: 
+    - {
+      1:['dl_client','dl_customer','dl_transaction'],
+      2:['dm_client','dm_customer','dm_transaction']
+    }

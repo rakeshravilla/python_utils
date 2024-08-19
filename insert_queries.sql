@@ -1,0 +1,1 @@
+INSERT INTO sample (name, age, sex) VALUES ('rakesh', '27', 'M', 'sathish', '27', 'M');
