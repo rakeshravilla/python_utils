@@ -33,12 +33,9 @@ def invoke_lambda(function_name, payload, environment='default'):
     :param payload: Payload to pass to the Lambda function.
     :param environment: AWS environment (profile) to use.
     :return: Response from the Lambda function.
-    """
-    # Initialize a session using the specified environment's profile
-    session = boto3.Session(profile_name=environment)
-    
+    """    
     # Initialize Lambda client
-    lambda_client = session.client('lambda')
+    lambda_client = boto3.client('lambda')
     
     # Convert payload dictionary to JSON
     payload_json = json.dumps(payload)
@@ -61,7 +58,7 @@ def invoke_lambda(function_name, payload, environment='default'):
 
 # Example usage:
 if __name__ == "__main__":
-    json_file_path = 'path/to/your/config.json'
+    json_file_path = 'payload_config.json'
     environment = 'your-aws-environment'  # E.g., 'dev', 'prod'
     
     # Load function name and payload from the JSON file
